@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HomePage from "./pages/homePage";
-
+import MovieDetailsPage from './pages/movieDetailsPage'
 const sample = {
   adult: false,
   backdrop_path: "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg",
@@ -87,8 +87,14 @@ const movies = [sample, sample, sample, sample, sample, sample, sample];
 
 const App = () => {
   return (
-      <HomePage movies={movies} />
-  );
+      <MovieDetailsPage movie={sample} images={images} />
+      );
 };
 
+const images = [
+  "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+  "/v1QQKq8M0fWxMgSdGOX1aCv8qMB.jpg",
+  "/2iGN0aKHJYD0xQydlfuCUAcgNbO.jpg",
+  "/rjBwhsOzHKUw2NIOrE7aMqjfe6s.jpg",
+]
 ReactDOM.render(<App />, document.getElementById("root"));
