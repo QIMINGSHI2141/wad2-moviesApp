@@ -37,6 +37,14 @@ describe("Movie Details Page", () => {
         });
     });
 
-    
+
+    it("should display the movie's details", () => {
+        cy.get("h3").contains(movie.title);
+        cy.get("ul").eq(0);
+        cy.get("img");
+
+
+        // MuiGridListTile-tile
+      });
     });
 });
