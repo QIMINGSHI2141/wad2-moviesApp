@@ -106,7 +106,18 @@ describe("Home Page ", () => {
          });
          
        });
-     });
+       describe("From the Favorites page", () => {
+        it("should Select favourite movie functionality Favourites", () =>{
+          cy.get("button[aria-label='add to favorites']").eq(0).click();
+          cy.get("button[aria-label='add to favorites']").eq(1).click();
+          cy.get(".MuiCardHeader-avatar");
+          cy.get("header").find(".MuiToolbar-root").find("button").eq(1).click();
+          
+        });
+
+        });
+      
+  });
 
   
   
