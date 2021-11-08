@@ -3,7 +3,7 @@ import PageTemplate from '../components/templateMovieListPage'
 import { useQuery } from 'react-query'
 import { getUpcomingMovies } from "../api/tmdb-api";
 import Spinner from '../components/spinner'
-import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
+// import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 // const UpcomingMoviesPages = (props) => {
 //     const [movies, setMovies] = useState([]);
