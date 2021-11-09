@@ -40,7 +40,7 @@ describe("Navigation", () => {
       it("should allow navigation to the Favourites page from the link", () => {
         cy.get("header").find(".MuiToolbar-root").find("button").eq(1).click();
         cy.url().should("include", `/favorites`);
-        cy.get("h3").contains("Favourite Movies");
+        cy.get("h3").contains("Favorite Movies");
       });
     });
     describe(
@@ -54,7 +54,7 @@ describe("Navigation", () => {
           cy.get("header").find("button").click();
           cy.get("li").eq(1).click();
           cy.url().should("include", `/favorites`);
-          cy.get("h3").contains("Favourite Movies");
+          cy.get("h3").contains("Favorite Movies");
         });
       });
       describe("From the Favorites page", () => {
@@ -90,7 +90,7 @@ describe("Navigation", () => {
         });
         it("should navigate backward and forward between the movies detail page and the Favourite page.", () => {
           cy.get("button[aria-label='go back'").click();
-          cy.get("h3").contains("Favourite Movies");
+          cy.get("h3").contains("Favorite Movies");
           cy.url().should("not.include", `/movies/${movies[0].id}`);
           cy.get("button[aria-label='go forward'").click();
           cy.url().should("include", `/movies/${movies[0].id}`);
