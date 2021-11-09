@@ -10,13 +10,13 @@ import Typography from "@material-ui/core/Typography";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import CalendarIcon from "@material-ui/icons/CalendarTodayTwoTone";
 import StarRateIcon from "@material-ui/icons/StarRate";
-import IconButton from "@material-ui/core/IconButton";
+//import IconButton from "@material-ui/core/IconButton";
 import Grid from "@material-ui/core/Grid";
 import img from '../../images/film-poster-placeholder.png'
 import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import { MoviesContext } from "../../contexts/moviesContext";
-import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+//import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 const useStyles = makeStyles({
   card: { maxWidth: 345 },
   media: { height: 500 },
@@ -35,10 +35,10 @@ export default function MovieCard({ movie, action }) {
     movie.favorite = false
   }
 
-  const handleAddToFavorite = (e) => {
-    e.preventDefault();
-    addToFavorites(movie);
-  };
+  // const handleAddToFavorite = (e) => {
+  //   e.preventDefault();
+  //   addToFavorites(movie);
+  // };
 
   const { mustwatch, addToMustwatch } = useContext(MoviesContext);
 
@@ -48,10 +48,10 @@ export default function MovieCard({ movie, action }) {
     movie.mustwatch = false
   }
 
-  const handleaddToMustwatch = (e) => {
-    e.preventDefault();
-    addToMustwatch(movie);
-  };
+  // const handleaddToMustwatch = (e) => {
+  //   e.preventDefault();
+  //   addToMustwatch(movie);
+  // };
 
   return (
     <Card className={classes.card}>

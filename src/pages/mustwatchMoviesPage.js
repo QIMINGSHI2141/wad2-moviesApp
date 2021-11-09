@@ -26,7 +26,7 @@ const MustwatchMoviesPage = () => {
     return <Spinner />;
   }
   const movies = mustwatchMovieQueries.map((q) => q.data);
-  const toDo = () => true;
+  //const toDo = () => true;
 
   return (
     <PageTemplate
