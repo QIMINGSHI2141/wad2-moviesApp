@@ -34,7 +34,6 @@ bundle_app:
   script:
     - npm run build
 
-<<<<<<< HEAD
   artifacts:
     paths:
       - build/
@@ -45,10 +44,3 @@ e2etest:
     - echo "Run tests in headless mode"
     - npm run start:ci
 
-=======
-e2etest:    
-    stage: test
-    script:
-      - echo "Run tests in headless mode"
-      - npm run start:ci
->>>>>>> caching-in-ci
