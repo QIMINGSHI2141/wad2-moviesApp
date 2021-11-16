@@ -8,6 +8,18 @@ stages:
   - test
 
 # Jobs 
+variables:
+   npm_config_cache: "$CI_PROJECT_DIR/.npm"
+   CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+
+cache:
+   key:
+     files:
+        - package.json
+   paths:
+      - .npm
+      - cache/Cypress
+      - node_modules
 
 install_dependencies:
   stage: install
@@ -18,15 +30,17 @@ install_dependencies:
       - node_modules/
 
 bundle_app:
-stage: build
-script:
-  - npm run build
-artifacts:
-  paths:
-    - build/
+  stage: build
+  script:
+    - npm run build
+
+  artifacts:
+    paths:
+      - build/
 
 e2etest:    
   stage: test
   script:
     - echo "Run tests in headless mode"
     - npm run start:ci
+
