@@ -24,7 +24,7 @@ cache:
 install_dependencies:
   stage: install
   script:
-    - npm ci
+    - npm ci --cache .npm --prefer-offline
   artifacts:
     paths:
       - node_modules/
