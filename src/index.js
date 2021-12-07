@@ -7,6 +7,8 @@ import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import SiteHeader from './components/siteHeader'
 import UpcomingMoviesPages from "./pages/upcomingMoviesPage"
+import nowplayingMoviesPages from "./pages/nowplayingMoviesPage"
+import topratedMoviesPages from "./pages/topratedMoviesPage.js"
 import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from 'react-query/devtools'
 import MoviesContextProvider from "./contexts/moviesContext";
@@ -21,6 +23,8 @@ const App = () => {
       <MoviesContextProvider>
           {" "}
           <Switch>
+        <Route exact path="/movies/toprated" component={topratedMoviesPages} />   
+        <Route exact path="/movies/nowplaying" component={nowplayingMoviesPages} />
         <Route exact path="/movies/mustwatch" component={MustwatchMoviesPage} />
         <Route exact path="/reviews/form" component={AddMovieReviewPage} />
         <Route exact path="/movies/upcoming" component={UpcomingMoviesPages} />
@@ -49,3 +53,4 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
+//updating
