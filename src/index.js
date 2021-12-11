@@ -15,6 +15,7 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import MoviesContextProvider from "./contexts/moviesContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
 import MustwatchMoviesPage from "./pages/mustwatchMoviesPage";
+import CompanyPage from "./pages/companyPage";
 // import PopularPeoplePage from "./pages/popularPeoplePage"
 // import PersonPage from "./pages/personPage"
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Switch>
         {/* <Route path="/people/popular" component={PopularPeoplePage} />
         <Route path="/people/:id" component={PersonPage} /> */}
+        <Route exact path="/movies/company" component={CompanyPage} />  
         <Route exact path="/movies/popular" component={popularMoviesPages} />  
         <Route exact path="/movies/toprated" component={topratedMoviesPages} />   
         <Route exact path="/movies/nowplaying" component={nowplayingMoviesPages} />

@@ -154,3 +154,7 @@ export const getMovie = (args) => {
      });
     };
     
+    export const searchCompany = async ({query}) => {
+      const res = await fetch(`https://api.themoviedb.org/3/search/company?api_key=e572f589327604d8519e6a2cbdc9836f&page=1&query=${query}`);
+      return await res.json();
+    }
