@@ -10,13 +10,17 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import BookIcon from "@material-ui/icons/Book";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import AccessAlarmsIcon from '@material-ui/icons/AccessAlarms';
 import { withRouter } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import LiveTvIcon from '@material-ui/icons/LiveTv';
 import FaceRetouchingNaturalRoundedIcon from '@material-ui/icons/FaceRounded';
-
+import BusinessIcon from '@material-ui/icons/Business';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import AccessibilityNewRoundedIcon from '@material-ui/icons/AccessibilityNewRounded';
+import SentimentVerySatisfiedRoundedIcon from '@material-ui/icons/SentimentVerySatisfiedRounded';
 const useStyles = makeStyles({
   list: {
     width: 250
@@ -60,8 +64,31 @@ export function TemporaryDrawer() {
            <ListItemText/>
          </ListItem>
          <ListItem>
-           <ListItemIcon><BookIcon/> </ListItemIcon>
+           <ListItemIcon><BookmarksIcon/> </ListItemIcon>
            <Link to="/movies/mustwatch">Mustwatch</Link>
+           <ListItemText />
+         </ListItem>
+         </List>
+         <Divider/>
+         <List>
+         <ListItem>
+           <ListItemIcon><AccessAlarmsIcon/> </ListItemIcon>
+           <Link to="/movies/upcoming">Upcoming Movies</Link>
+           <ListItemText />
+         </ListItem>
+         <ListItem>
+           <ListItemIcon><AccessibilityNewRoundedIcon/> </ListItemIcon>
+           <Link to="/movies/popular">Popular Movies</Link>
+           <ListItemText />
+         </ListItem>
+         <ListItem>
+           <ListItemIcon><BookIcon/> </ListItemIcon>
+           <Link to="/movies/toprated">Top-rated Movies</Link>
+           <ListItemText />
+         </ListItem>
+         <ListItem>
+           <ListItemIcon><SentimentVerySatisfiedRoundedIcon/> </ListItemIcon>
+           <Link to="/movies/nowplaying">Nowplaying Movies</Link>
            <ListItemText />
          </ListItem>
       </List>
@@ -74,21 +101,20 @@ export function TemporaryDrawer() {
            <ListItemText />
          </ListItem>
       </List>
+      <Divider/>
       <List>
          <ListItem>
-           <ListItemIcon><BookIcon/></ListItemIcon>
-           <Link to="/actors/liked">Liked Actors</Link>
+           <ListItemIcon><BusinessIcon/></ListItemIcon>
+           <Link to="/movies/company">Company Search</Link>
+           <ListItemText />
+         </ListItem>
+         <ListItem>
+           <ListItemIcon><LiveTvIcon/></ListItemIcon>
+           <Link to="/movies/tv">TV Search</Link>
            <ListItemText />
          </ListItem>
       </List>
       <Divider/>
-      <List>
-         <ListItem>
-           <ListItemIcon><HomeRoundedIcon/></ListItemIcon>
-           <Link to="/login">Login</Link>
-           <ListItemText />
-         </ListItem>
-      </List>
     </div>
   );
 
@@ -96,7 +122,7 @@ export function TemporaryDrawer() {
     <div>
         <IconButton><MenuOpenIcon/>
         <nav className={classes.title}></nav>
-      {(["Menu"]).map((anchor) => (
+      {(["More"]).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer

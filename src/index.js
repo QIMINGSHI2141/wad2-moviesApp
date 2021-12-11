@@ -18,6 +18,7 @@ import MustwatchMoviesPage from "./pages/mustwatchMoviesPage";
 import Company from "./pages/companyPage";
 import TV from "./pages/tvPage";
 import Login from "./pages/loginPage";
+import ActorsHomePage from "./pages/actorPage"
 // import PopularPeoplePage from "./pages/popularPeoplePage"
 // import PersonPage from "./pages/personPage"
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Switch>
         {/* <Route path="/people/popular" component={PopularPeoplePage} />
         <Route path="/people/:id" component={PersonPage} /> */}
+        <Route exact path="/actors" component={ActorsHomePage} /> 
         <Route exact path="/movies/tv" component={TV} /> 
         <Route exact path="/movies/company" component={Company} />  
         <Route exact path="/movies/login" component={Login} />  
