@@ -24,7 +24,7 @@ import PlaylistAddIcon from '../components/cardIcons/addToMustwatch';
     
       return (
         <PageTemplate
-          title="Nowplaying Movies"
+          title="Popular Movies"
           movies={movies}
           action={(movie) => {
             return <PlaylistAddIcon movie={movie} />
