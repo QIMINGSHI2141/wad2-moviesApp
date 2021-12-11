@@ -164,3 +164,9 @@ export const getMovie = (args) => {
       const res = await fetch(url);
       return await res.json();
     }
+
+    export const getPeople = async (id)=>{
+      const url = `https://api.themoviedb.org/3/movie/${id}/credits?api_key=e572f589327604d8519e6a2cbdc9836f&language=en-US`
+      const res = await fetch(url);
+      return await res.json();
+    }

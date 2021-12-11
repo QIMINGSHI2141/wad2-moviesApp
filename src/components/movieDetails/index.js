@@ -82,6 +82,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
         variant="extended"
         onClick={() =>setDrawerOpen(true)}
         className={classes.fab}
+        style={{"zIndex":"999"}}
       >
         <NavigationIcon />
         Reviews
