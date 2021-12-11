@@ -158,3 +158,9 @@ export const getMovie = (args) => {
       const res = await fetch(`https://api.themoviedb.org/3/search/company?api_key=e572f589327604d8519e6a2cbdc9836f&page=1&query=${query}`);
       return await res.json();
     }
+
+    export const searchTV = async ({query})=>{
+      const url =`https://api.themoviedb.org/3/search/tv?api_key=e572f589327604d8519e6a2cbdc9836f&language=en-US&page=1&include_adult=false&query=${query}`;
+      const res = await fetch(url);
+      return await res.json();
+    }

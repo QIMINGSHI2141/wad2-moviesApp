@@ -34,7 +34,7 @@ function Company() {
                         }
                         return (
                             <div key={item.id} style={{ "border": "1px solid #e5e5e5", "margin": "20px 0","padding":"20px" }}>
-                                <alt img src={`https://image.tmdb.org/t/p/w500/${item.logo_path}`} height={100} />
+                                <img src={`https://image.tmdb.org/t/p/w500/${item.logo_path}`} height={100} />
                                 <p style={{"textAlign":"center","fontSize":"18px","fontWeight":"bold"}}>{item.name}</p>
                             </div>
                         )

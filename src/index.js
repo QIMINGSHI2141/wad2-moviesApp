@@ -16,6 +16,7 @@ import MoviesContextProvider from "./contexts/moviesContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
 import MustwatchMoviesPage from "./pages/mustwatchMoviesPage";
 import CompanyPage from "./pages/companyPage";
+import TVPage from "./pages/tvPage";
 // import PopularPeoplePage from "./pages/popularPeoplePage"
 // import PersonPage from "./pages/personPage"
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Switch>
         {/* <Route path="/people/popular" component={PopularPeoplePage} />
         <Route path="/people/:id" component={PersonPage} /> */}
+        <Route exact path="/movies/tv" component={TVPage} /> 
         <Route exact path="/movies/company" component={CompanyPage} />  
         <Route exact path="/movies/popular" component={popularMoviesPages} />  
         <Route exact path="/movies/toprated" component={topratedMoviesPages} />   
