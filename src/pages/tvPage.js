@@ -20,7 +20,7 @@ function TV() {
                     console.log(res);
                 })
             }}>
-                <Form.Item label={"query"} name={"query"}>
+                <Form.Item label={"Query"} name={"query"}>
                     <Input placeholder='Search TV' onChange={() => form.submit()} />
                 </Form.Item>
             </Form>
@@ -29,7 +29,7 @@ function TV() {
                     console.log(tv);
                     return (
                         <div key={tv.id} style={{"width":"300px"}}>
-                            <img src={`https://image.tmdb.org/t/p/w500/${tv.poster_path}`} width={300} height={450}/>
+                            <img src={`https://image.tmdb.org/t/p/w500/${tv.poster_path}`} width={300} height={450} alt='logo'/>
                             <p style={{"whiteSpace":"nowrap","overflow":"hidden","textOverflow":"ellipsis"}}>{tv.overview}</p>
                         </div>
                     )

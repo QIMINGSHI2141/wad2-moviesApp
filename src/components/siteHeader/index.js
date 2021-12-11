@@ -11,6 +11,7 @@ import Menu from "@material-ui/core/Menu";
 import { withRouter } from "react-router-dom";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { TemporaryDrawer } from "../nav";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -36,6 +37,7 @@ const SiteHeader = ( { history }) => {
     { label: "Popular", path: "/movies/popular" },
     { label: "Company", path: "/movies/company" },
     { label: "TV", path: "/movies/tv" },
+    { label: localStorage.getItem('session')?"Logout":"Login", path: "/movies/login" },
   ];
 
   const handleMenuSelect = (pageURL) => {
@@ -53,9 +55,10 @@ const SiteHeader = ( { history }) => {
           <Typography variant="h4" className={classes.title}>
             TMDB Client
           </Typography>
-          <Typography variant="h6" className={classes.title}>
+          <TemporaryDrawer/>
+          {/* <Typography variant="h6" className={classes.title}>
             All you ever wanted to know about Movies!
-          </Typography>
+          </Typography> */}
             {isMobile ? (
               <>
                 <IconButton
@@ -85,7 +88,13 @@ const SiteHeader = ( { history }) => {
                   {menuOptions.map((opt) => (
                     <MenuItem
                       key={opt.label}
-                      onClick={() => handleMenuSelect(opt.path)}
+                      onClick={() => {
+                        if(opt.label==='Logout'){
+                          window.location.reload()
+                          localStorage.removeItem("session")
+                        }
+                        handleMenuSelect(opt.path)
+                      }}
                     >
                       {opt.label}
                     </MenuItem>
@@ -98,7 +107,13 @@ const SiteHeader = ( { history }) => {
                   <Button
                     key={opt.label}
                     color="inherit"
-                    onClick={() => handleMenuSelect(opt.path)}
+                    onClick={() => {
+                      if(opt.label==='Logout'){
+                        window.location.reload()
+                        localStorage.removeItem("session")
+                      }
+                      handleMenuSelect(opt.path)
+                    }}
                   >
                     {opt.label}
                   </Button>
