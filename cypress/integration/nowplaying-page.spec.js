@@ -106,8 +106,8 @@ describe("Nowplaying Page ", () => {
          });
          
        });
-       describe("From the Popular page", () => {
-        it("should Select mustwatch movie functionality mustwatches", () =>{
+       describe("From the Nowplaying page", () => {
+        it("should Select nowplaying movie functionality mustwatches", () =>{
           cy.get("button[aria-label='add to mustwatch']").eq(0).click();
           cy.get("button[aria-label='add to mustwatch']").eq(1).click();
           cy.get("header").find(".MuiToolbar-root").find("button").eq(6).click();
