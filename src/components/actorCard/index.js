@@ -50,21 +50,7 @@ export default function ActorCard({ actor, action }) {
         <Card className={classes.card}>
             <CardHeader
                 className={classes.header}
-                // avatar={
-                //     actor.liked ? (
-                //         <Avatar className={classes.avatar}>
-                //             <StarsIcon size="large"/>
-                //         </Avatar>
-                //     ) : null
 
-                // }
-                // avatar={
-                //   movie.playlist? (
-                //     <Avatar className={classes.avatar}>
-                //       <PlaylistAddIcon />
-                //     </Avatar>
-                //   ) : null
-                // }
                 title={
                     <Typography variant="h5" component="p">
                         {actor.name}{" "}
