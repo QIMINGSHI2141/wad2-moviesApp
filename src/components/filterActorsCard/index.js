@@ -43,9 +43,7 @@ export default function FilterActorsCard(props) {
     component="form"
     sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}>
        <CardContent>
-      {/* <IconButton sx={{ p: '10px' }} aria-label="menu">
-      <SearchIcon />
-      </IconButton> */}
+
       <Typography variant="h5" component="h1">
           <SearchIcon fontSize="large" />
           Filter the actors.
