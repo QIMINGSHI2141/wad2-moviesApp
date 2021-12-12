@@ -25,7 +25,19 @@ describe("Movie Details Page", () => {
       images = movieImages;
       return movieImages.id;
     });
+  // cy.request(
+  //   `https://api.themoviedb.org/3/movie/${id}/credits??api_key=${Cypress.env(
+  //     "TMDB_KEY"
+  //    )}`
+  // )
+  //   .its("body")
+  //   .then((movieImages) => {
+  //     images = movieImages;
+  //     return movieImages.id;
+  //   });
+
 });
+
   beforeEach(() => {
     cy.visit(`/movies/${movie.id}`);
   });
@@ -52,7 +64,7 @@ describe("Movie Details Page", () => {
     it("should display the movie's details", () => {
         const ImagesSrcs = images.posters.map((i) => i.file_path);
         cy.get("img").each(($img, index)=>{
-            cy.wrap($img).should("have.attr","src","https://image.tmdb.org/t/p/w500/" + ImagesSrcs[index]);
+            cy.wrap($img).should("have.attr","src","https://image.tmdb.org/t/p/w500/" + ImagesSrcs[index]||"have.attr","src","https://image.tmdb.org/t/p/w500/");
         });
 
 

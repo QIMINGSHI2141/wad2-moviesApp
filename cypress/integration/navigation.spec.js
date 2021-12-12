@@ -38,7 +38,7 @@ describe("Navigation", () => {
   describe("The site header", () => {
     describe("when the viewport is desktop scale", () => {
       it("should allow navigation to the Favourites page from the link", () => {
-        cy.get("header").find(".MuiToolbar-root").find("button").eq(1).click();
+        cy.get("header").find(".MuiToolbar-root").find("button").eq(3).click();
         cy.url().should("include", `/favorites`);
         cy.get("h3").contains("Favorite Movies");
       });
@@ -51,7 +51,7 @@ describe("Navigation", () => {
       },
       () => {
         it("should allow navigation to the Favourites page from the dropdown menu", () => {
-          cy.get("header").find("button").click();
+          cy.get("header").find("button").eq(2).click();
           cy.get("li").eq(1).click();
           cy.url().should("include", `/favorites`);
           cy.get("h3").contains("Favorite Movies");
@@ -61,7 +61,7 @@ describe("Navigation", () => {
         beforeEach(() => {
           cy.get("button[aria-label='add to favorites']").eq(0).click();
           cy.get("button[aria-label='add to favorites']").eq(1).click();
-          cy.get("header").find(".MuiToolbar-root").find("button").eq(1).click();
+          cy.get("header").find(".MuiToolbar-root").find("button").eq(3).click();
         });
         it("should navigate to the movies detail page and change the browser URL", () => {
           cy.get(".MuiCardActions-root").eq(0).contains("More Info").click();
@@ -85,7 +85,7 @@ describe("Navigation", () => {
       describe("The forward/backward links", () => {
         beforeEach(() => {
           cy.get("button[aria-label='add to favorites']").eq(0).click();
-          cy.get("header").find(".MuiToolbar-root").find("button").eq(1).click();
+          cy.get("header").find(".MuiToolbar-root").find("button").eq(3).click();
           cy.get(".MuiCardActions-root").eq(0).contains("More Info").click();
         });
         it("should navigate backward and forward between the movies detail page and the Favourite page.", () => {

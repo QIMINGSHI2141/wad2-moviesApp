@@ -11,7 +11,7 @@ describe("Home Page ", () => {
   before(() => {
     // Get movies from TMDB and store in movies variable.
     cy.request(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${Cypress.env(
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${Cypress.env(
         "TMDB_KEY"
       )}&language=en-US&include_adult=false&include_video=false&page=1`
     )
@@ -21,12 +21,12 @@ describe("Home Page ", () => {
       })
   })
   beforeEach(() => {
-    cy.visit("/")
+    cy.visit("/movies/toprated")
   });
   
     describe("Base test", () => {
       it("displays page header", () => {
-        cy.get("h3").contains("Discover Movies");
+        cy.get("h3").contains("Top-Rated Movies");
         cy.get("h1").contains("Filter the movies");
       });
     });
@@ -88,7 +88,7 @@ describe("Home Page ", () => {
        });
        describe("By movie genre", () => {
         it("should display movies with the specified genre and title", () => {
-            let searchString = "fr";
+            let searchString = "l";
             let matchingTitleMovies = filterByTitle(movies, searchString);
             const selectedGenreId = 35;
            const selectedGenreText = "Comedy";
@@ -106,18 +106,14 @@ describe("Home Page ", () => {
          });
          
        });
-       describe("From the Favorites page", () => {
-        it("should Select favourite movie functionality Favourites", () =>{
-          cy.get("button[aria-label='add to favorites']").eq(0).click();
-          cy.get("button[aria-label='add to favorites']").eq(1).click();
-          cy.get(".MuiCardHeader-avatar");
-          cy.get("header").find(".MuiToolbar-root").find("button").eq(3).click();
+       describe("From the Popular page", () => {
+        it("should Select mustwatch movie functionality mustwatches", () =>{
+          cy.get("button[aria-label='add to mustwatch']").eq(0).click();
+          cy.get("button[aria-label='add to mustwatch']").eq(1).click();
+          cy.get("header").find(".MuiToolbar-root").find("button").eq(6).click();
           
         });
 
         });
       
   });
-
-  
-  
