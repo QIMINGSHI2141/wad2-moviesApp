@@ -7,7 +7,7 @@ const filterByTitle = (movieList, string) =>
 const filterByGenre = (movieList, genreId) =>
   movieList.filter((m) => m.genre_ids.includes(genreId));
 
-describe("Home Page ", () => {
+describe("Toprated Page ", () => {
   before(() => {
     // Get movies from TMDB and store in movies variable.
     cy.request(

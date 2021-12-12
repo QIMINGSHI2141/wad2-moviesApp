@@ -34,7 +34,7 @@ function Login() {
                             content: "login success!"
                         })
                         window.location.reload()
-                        window.location.href("homePage")
+
                     }
                 })
             }}>

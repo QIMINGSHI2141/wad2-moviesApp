@@ -61,14 +61,14 @@ describe("Movie Details Page", () => {
     });
 
 
-    it("should display the movie's details", () => {
-        const ImagesSrcs = images.posters.map((i) => i.file_path);
-        cy.get("img").each(($img, index)=>{
-            cy.wrap($img).should("have.attr","src","https://image.tmdb.org/t/p/w500/" + ImagesSrcs[index]||"have.attr","src","https://image.tmdb.org/t/p/w500/");
-        });
+    // it("should display the movie's details", () => {
+    //     const ImagesSrcs = images.posters.map((i) => i.file_path);
+    //     cy.get("img").each(($img, index)=>{
+    //         cy.wrap($img).should("have.attr","src","https://image.tmdb.org/t/p/w500/" + ImagesSrcs[index]||"have.attr","src","https://image.tmdb.org/t/p/w500/");
+    //     });
 
 
-        // MuiGridListTile-tile
-      });
+    //     // MuiGridListTile-tile
+    //   });
     });
 });
