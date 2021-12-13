@@ -46,105 +46,106 @@ Use 'npm install' to download node_modules
 
 ### Component catalogue.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\home.png" style="zoom: 33%;" />
+![ ](./images/home.png)
 
 > Shows what I can display on my current home page, basically in the header_site. The interface can be jumped through buttons.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\Login.png" style="zoom: 33%;" />
+![ ](./images/Login.png)
 
 > The login page is shown in the figure above.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\enterlogin.png" style="zoom:33%;" />
+![ ](./images/enterlogin.png)
 
 > Enter the correct TMDB account and password and click login
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\loginsuccess.png" style="zoom: 33%;" />
+![ ](./images/loginsuccess.png)
+
 
 > Successful login popover
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\wrongacc.png" style="zoom:33%;" />
+![ ](./images/wrongacc.png)
 
 > If input wrong account password
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\loginfailed.png" style="zoom: 33%;" />
+![ ](./images/loginfailed.png)
 
 > Login failure popover
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\changeoflogin.png" style="zoom:50%;" />
+![ ](./images/changeoflogin.png)
 
 > After successfully logging in, you can choose to log out
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\selectmoreinfo.png" style="zoom:33%;" />
+![ ](./images/selectmoreinfo.png)
 
 > Click the MoreInfo button in any movie pages
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\actorsindetails.png" style="zoom:33%;" />
+![ ](./images/actorsindetails.png)
 
 > In the movie details page, there are pictures of the actors involved in the movie.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\Review.png" style="zoom:33%;" />
+![ ](./images/Review.png)
 
 > Review is still displayed as a drop-down menu
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\like.png" style="zoom:33%;" />
+![ ](./images/like.png)
 
 > When you choose to like
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\like0.png" style="zoom:33%;" />
+![ ](./images/like0.png)
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\favoritepage.png" style="zoom:33%;" />
+![ ](./images/favoritepage.png)
 
 >Change after clicking the "Like" button
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\upcoming.png" style="zoom:33%;" />
+![ ](./images/upcoming.png)
 
 > A list of upcoming movies
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\filtermovies.png" style="zoom:33%;" />
+![ ](./images/filtermovies.png)
 
 > Using the filter, enter the movie name that contains "a" and select the option that belongs to the family category.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\addmustwatch.png" style="zoom:33%;" />
+![ ](./images/addmustwatch.png)
 
 > The buttons in this section are used to add movies to the list you want to see
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\mustwatch.png" style="zoom:33%;" />
+![ ](./images/mustwatch.png)
 
 >After clicking on the first two movies, click on the Mustwatch button to enter the page and view the movies that have been added to the list.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\nowplaying.png" style="zoom:25%;" />
+![ ](./images/nowplaying.png)
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\popular.png" alt="popular" style="zoom:25%;" />
+![ ](./images/popular.png)
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\toprated.png" alt="toprated" style="zoom:25%;" />
+![ ](./images/toprated.png)
 
 >There's not much more to say about similar pages.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\morelist.png" style="zoom:33%;" />
+![ ](./images/morelist.png)
 
 >Click the "more" button at the top to display clickable links from the side. This includes some links that already exist in Headsiter, as well as some content that is not particularly relevant to the movie.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\linktoactor.png" style="zoom:33%;" />
+![ ](./images/linktoactor.png)
 
 > This is an actor page similar to a movie page.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\actorspage.png" style="zoom:33%;" />
+![ ](./images/actorspage.png)
 
 > It retains the ability to retrieve actors, as well as a movie card-like function.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\TVPAGE.png" style="zoom:33%;" />
+![ ](./images/TVPAGE.png)
 
 > This page is used to search for TV names and find similar shows,It displays the corresponding TV series only after the keyword is entered.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\TVsearch.png" style="zoom:33%;" />
+![ ](./images/TVsearch.png)
 
 > Enter keywords and it will display the corresponding TV series, along with posters and a brief introduction.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\company.png" style="zoom:33%;" />
+![ ](./images/company.png)
 
 > Similar to TV, the company section also provides corresponding search.
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\companysearch.png" style="zoom:33%;" />
+![ ](./images/companysearch.png)
 
 > Enter the keywords and the page will provide the corresponding company icon
 
@@ -188,7 +189,7 @@ Name: [Qiming Shi]
 
 Tests: cypress/integration/upcoming-page.spec.js
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\upcomingtest.png" style="zoom:33%;" />
+![ ](./images/upcomingtest.png)
 
 + Toprated Movies page - Shows the toprated movies. The header of this page should be Toprated Movies. The movie title filter and genre function should run successfully.
 
@@ -200,28 +201,28 @@ Tests: cypress/integration/toprated-page.spec.js
 
 Tests: cypress/integration/nowplaying-page.spec.js
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\nowplayingtest.png" style="zoom:33%;" />
+![ ](./images/nowplayingtest.png)
 
 + Actors page - Shows Actors. The header of this page should be Discover Actors. The actor  filter should run successfully.
 
 Tests: cypress/integration/actor-page.spec.js
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\actortest.png" style="zoom:33%;" />
+![ ](./images/actortest.png)
 
 + More button - Clicking this button should successfully jump to the target page from all the links which has set up.
 
 Tests: cypress/integration/more-list.spec.js
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\morelisttest.png" style="zoom:33%;" />
+![ ](./images/morelisttest.png)
 
 + Login Page-The login interface should be tested based on whether the user name and password entered can be logged in successfully. After successful login, the login button will become logout. If the login fails, it will remain unchanged.
 
 Tests: cypress/integration/login-page.spec.js
 
-<img src="E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\logintest.png" style="zoom:33%;" />
+![ ](./images/logintest.png)
 
 
 
 + Gitlab：
 
-  ![](E:\FORTHYEAR\webApplication\startcodee\moviesApp\images\gitlab.png)
+  ![ ](./images/gitlab.png)
